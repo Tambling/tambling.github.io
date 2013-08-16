@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/MyFontsWebfontsKit.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+  {% include header.html %}
+  <div id='content' data-current={{ page.current }}>
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+<script>$($('div#content').data('current')).addClass('active')</script>
