@@ -3,3 +3,10 @@ layout: main
 title: Projects | Dean Tambling
 current: "#projects"
 ---
+
+{% for post in site.categories.projects %}
+<article>
+  <h1>{{ post.title }}</h1>
+  </article>
+{% endfor %}
+

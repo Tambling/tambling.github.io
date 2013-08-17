@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <head>
   <title>Dean Tambling | Full-Stack Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="/normalize.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="stylesheet" type="text/css" href="/MyFontsWebfontsKit.css">
+  <link rel="stylesheet" type="text'css" href="http://mplus-fonts.sourceforge.jp/webfonts/mplus_webfonts.css">
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
+  <data id=current value='#logo'></data>
   <header>
   <nav class='miso'>
     <a id='logo' href="/">dean tambling</a>
@@ -16,10 +19,12 @@
       <a id='blog' href="/blog">blog</a>
     </ul>
   </nav>
+  <div id="indicator"></div>
 </header>
 
-  <div id='content' data-current=#logo>
-    <div class="centered miso">
+  <div id='fill'>
+    <div id='content'>
+      <div class="centered miso">
   Hi, I'm Dean.
   <br>
   I'm a Rails developer.
@@ -27,7 +32,7 @@
   I've <a href="/about">done a few things</a>, <a href="/projects">made a few things</a>, and <a href="/blog">said a few things</a>.
 </div>
 
+    </div>
   </div>
-  
 </body>
-<script>$($('div#content').data('current')).addClass('active')</script>
+<script>$($('#current').attr("value")).addClass('active')</script>
