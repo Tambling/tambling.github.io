@@ -70,7 +70,6 @@ nav a:hover, nav a.active{
   width: auto;
   height: auto;
   padding: 0;
-  min-height: auto;
 }
 #content {
   position: relative;
