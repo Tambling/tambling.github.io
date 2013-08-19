@@ -92,6 +92,19 @@ nav a:hover, nav a.active{
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
 }
-.miso{
-  font-family:  "mplus-1p-thin", Miso-Light, Helvetica, sans-serif;
+.mplus{
+  font-family:   mplus, Helvetica, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'mplus';
+    src: url('webfonts/mplus-1c-thin-webfont.eot');
+    src: url('webfonts/mplus-1c-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/mplus-1c-thin-webfont.woff') format('woff'),
+         url('webfonts/mplus-1c-thin-webfont.ttf') format('truetype'),
+         url('webfonts/mplus-1c-thin-webfont.svg#m_1cthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
