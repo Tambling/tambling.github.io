@@ -4,7 +4,10 @@ title: About | Dean Tambling
 current: "#about"
 ---
 <section id="resume">
-Resume
+{% capture about %}
+    {% include about.md %}
+  {% endcapture %}
+  {{ about | unindent | markdownify }}
 </section>
 <section id="contact">
   <h2>get in touch</h2>
