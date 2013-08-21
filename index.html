@@ -1,13 +1,12 @@
 ---
 layout: main
-title: Dean Tambling | Full-Stack Web Developer
-current: "#logo"
+title: Dean Tambling | Rails Developer
 ---
-
-<div class="centered mplus">
-  Hi, I'm Dean.
-  <br>
-  I'm a Rails developer.
-  <br>
-  I've <a href="/about">done a few things</a>, <a href="/projects">made a few things</a>, and <a href="/blog">said a few things</a>.
-</div>
+{% for post in site.posts %}
+  <article>
+    <h2><a href={{post.url}}>{{post.title}}</a></h2>
+    <h3>{{post.date}}</h3>
+    <h3>{{post.coordinates}}</h3>
+    {{post.content}}
+  </article>
+{% endfor %}
