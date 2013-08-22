@@ -32,7 +32,7 @@ module Jekyll
       def root_destination(dest)
         root = dest.chomp('_site')
         syntax = SassConfig.get()['syntax'].to_s
-        File.join(dest, @dir, @name.sub(/#{syntax}$/, 'css'))
+        File.join(root, @dir, @name.sub(/#{syntax}$/, 'css'))
       end
 
       # Convert the sass/scss file into a css file.
