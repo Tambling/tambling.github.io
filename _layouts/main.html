@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <head>
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="/normalize.css">
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" type="text/css" href="/font-awesome.css">
+  {% css_asset_tag global %}
+- /_assets/normalize.css
+- /_assets/style.css.scss
+- /_assets/font-awesome.css
+  {% endcss_asset_tag %}
+
+  {%javascript_asset_tag global %}
+  - /_assets/script.js
+
+  {% endjavascript_asset_tag %}
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="/script.js"></script>
 </head>
 <body>
-{% include header.html %}
-<section id="main">
-  {{ content }}
-</section>
+  {% include header.html %}
+  <section id="main">
+    {{ content }}
+  </section>
 
 </body>
