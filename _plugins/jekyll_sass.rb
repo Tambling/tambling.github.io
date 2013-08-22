@@ -30,7 +30,7 @@ module Jekyll
       end
 
       def root_destination(dest)
-        dest.chomp!('_site')
+        root = dest.chomp('_site')
         syntax = SassConfig.get()['syntax'].to_s
         File.join(dest, @dir, @name.sub(/#{syntax}$/, 'css'))
       end
