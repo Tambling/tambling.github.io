@@ -1,5 +1,7 @@
+$blue: #ccc;
 body{
   font-family: Georgia, serif;
+  background-color: $blue;
 }
 a{
   text-decoration: none;
@@ -48,10 +50,10 @@ a{
       height: 50px;
       line-height: 50px;
       &:hover{
-        color: #2980b9;
+        color: $blue;
       }
       &.active{
-        color: #2980b9;
+        color: $blue;
       }
     }
     line-height: 50px;
@@ -60,6 +62,9 @@ a{
   }
 }
 
+.hoverable:hover{
+  opacity: 1.0
+}
 
 header{
   margin: 0 auto;
@@ -82,18 +87,25 @@ header{
 
 #back{
   position: fixed;
-  width: 40px;
+  z-index: 10;
   top: 0px;
-  height: 60px;
-  line-height: 60px;
+  left: 0px;
+  padding: 5px;
+  border-radius: 0px 0px 10px 0px;
+  background-color: #ecf0f1;
+  opacity: 0.4;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
   vertical-align: middle;
-  left: 15px;
   color: #bdc3c7;
+  text-align: center;
   &:hover{
-    color: #2980b9;
+    opacity: 1;
+    color: $blue;
   }
   i{
-    line-height: 60px;
+    line-height: 50px;
     vertical-align: middle;
   }
 
@@ -116,6 +128,6 @@ article{
   padding: 40px;
 }
 .bordered{
-  border-left: 5px solid #2980b9;
-  border-bottom: 5px solid #2980b9;
+  border-left: 5px solid $blue;
+  border-bottom: 5px solid $blue;
 }
