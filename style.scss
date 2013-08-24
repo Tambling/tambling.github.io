@@ -92,16 +92,17 @@ a{
 
 #back{
   position: fixed;
-  z-index: 10;
   top: 0px;
   left: 0px;
+  width: 40px;
+  height: 50px;
+  z-index: 10;
   padding: 5px;
   border-radius: 0px 0px 10px 0px;
   background-color: $light;
   opacity: 0.6;
-  width: 40px;
-  height: 50px;
   line-height: 50px;
+  font-size: 30px;
   vertical-align: middle;
   color: $dark;
   text-align: center;
