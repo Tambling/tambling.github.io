@@ -8,6 +8,7 @@ body{
 }
 a{
   text-decoration: none;
+  color: $accent;
 }
 #floater{
   z-index: 10;
@@ -16,25 +17,31 @@ a{
   top: 50%;
   transform: translate(0%, -50%);
   -webkit-transform: translate(0%, -50%);
-  right: 0px;
+  right: -430px;
   border-radius: 10px 0px 0px 10px;
   background-color: #ecf0f1;
   opacity: 0.6;
+  border: 0px solid $accent;
   &:hover{
     opacity: 1;
   }
   &.opaque{
     opacity: 1;
   }
-  &.about-ready{
-    width: 330px;
-  }
+&.bordered{
+  border-left: 3px solid $accent;
+  border-bottom: 3px solid $accent;
+  border-top: 3px solid $accent;
+}
+&.flush-right{
+  right: 0px;
+}
   nav{
     float: left;
   }
 }
 #links{
-  margin: 0 15px;
+  margin: 0 8px;
   clear: both;
   padding: 0;
   line-height: 50px;
@@ -44,17 +51,17 @@ a{
     padding: 0 5px;
     width: 30px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     vertical-align: middle;
     i{
-      height: 50px;
-      line-height: 50px;
+      height: 40px;
+      line-height: 40px;
       vertical-align: middle;
     }
     a{
       color: $dark;
-      height: 50px;
-      line-height: 50px;
+      height: 40px;
+      line-height: 40px;
       &:hover{
         color: $accent;
       }
@@ -64,7 +71,6 @@ a{
     }
   }
 }
-
 .hoverable:hover{
   opacity: 1.0
 }
@@ -76,7 +82,9 @@ header{
   font-size: 2.7em;
   margin: 0 auto;
   margin-top: 10px;
-  width: 700px;
+  min-width: 300px;
+    width: 60%;
+  max-width: 700px;
   text-align: center;
   height: 61px;
   line-height: 61px;
@@ -85,13 +93,15 @@ header{
 
 #main{
   z-index: 0;
-  width: 700px;
+  min-width: 300px;
+  width: 60%;
+  max-width: 700px;
   margin: 0 auto;
   margin-top: 10px;
   h2, h3{
     text-align: center;
     font-family: "Lato", sans-serif;
-      font-weight: 300;
+    font-weight: 300;
     margin: 6px 0;
   }
 }
@@ -103,13 +113,13 @@ header{
   left: 0px;
   padding: 5px;
   border-radius: 0px 0px 10px 0px;
-  background-color: #ecf0f1;
-  opacity: 0.4;
+  background-color: $light;
+  opacity: 0.6;
   width: 40px;
   height: 50px;
   line-height: 50px;
   vertical-align: middle;
-  color: #bdc3c7;
+  color: $dark;
   text-align: center;
   &:hover{
     opacity: 1;
@@ -124,10 +134,10 @@ header{
 }
 
 #about{
-  display: none;
   width: 400px;
   padding: 0 15px;
   float: left;
+
 }
 .icon{
   font-size: 30px;
@@ -137,9 +147,4 @@ article{
   background-color: white;
   margin-bottom: 15px;
   padding: 40px;
-}
-.bordered{
-  border-left: 5px solid $accent;
-  border-bottom: 5px solid $accent;
-  border-top: 5px solid $accent;
 }
