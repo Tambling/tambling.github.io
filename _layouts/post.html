@@ -4,7 +4,7 @@ layout: main
 <a href="/" id="back" class="hoverable"><i class="icon-chevron-left icon"></i></a>
 <article>
 <h2>{{ page.title }}</h2>
-<h3>{{ page.date }}</h3>
+<h3>{{ page.date | date: "%A, %B %d, %Y" }}</h3>
 <h3>{{ page.coordinates }}</h3>
 {{content}}
 </article>
