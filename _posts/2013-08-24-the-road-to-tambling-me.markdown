@@ -22,6 +22,7 @@ Speaking of programming, here's a quick glimpse at what's driving this site:
 * This page is hosted on GitHub Pages, and pointed to Tambling.me, which I registered through [iwantmyname](https://iwantmyname.com) . This setup is surprisingly painless, and such a welcome change from how clunky web hosting was just a few years ago.
 * The little bit of animation (hint: click the question mark icon to the right) is jQuery and jQuery UI, specifically UI's ability to animate toggleClass().
 * This page is styled using Sass. This part wasn't easy&mdash; the [Jekyll/Sass gem](https://github.com/noct/jekyll-sass) by default saves the compiled CSS to the \_site subdirectory of your Jekyll install, but GitHub gets the CSS straight from the root directory. I ultimately had to modify Jekyll/Sass to save the compiled CSS to the root directory.
-* This page is a work in progress. I welcome any and all feedback, and you can get in touch with me through any of the means listed in the toolbar (which, CSS gods willing, should be fixed on the right side of this page).
+
+This page is a work in progress. I welcome any and all feedback, and you can get in touch with me through any of the means listed in the toolbar (which, CSS gods willing, should be fixed on the right side of this page).
 
 Now, just to actually get into the blogging habit...
