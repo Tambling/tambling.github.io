@@ -98,6 +98,10 @@ header{
   max-width: 700px;
   margin: 0 auto;
   margin-top: 10px;
+  h1{
+    text-align: center;
+    color: $light;
+  }
   h2, h3{
     text-align: center;
     font-family: "Lato", sans-serif;
@@ -147,4 +151,35 @@ article{
   background-color: white;
   margin-bottom: 15px;
   padding: 40px;
+  overflow: auto;
+}
+
+figure.image{
+  padding: 10px;
+  width: 400px;
+  margin: 10;
+  background-color: $light;
+  height: auto;
+  &.left{
+    float: left;
+    margin-left: 0px;
+  }
+  &.right{
+    float: right;
+    margin-right: 0px;
+  }
+  &.center{
+    margin: 10 auto;
+    clear: both;
+  }
+  img{
+    display: block;
+    clear: both;
+  }
+  figcaption{
+    font-size: 0.8em;
+    margin-top: 10px;
+    clear: both;
+    text-align: center;
+  }
 }

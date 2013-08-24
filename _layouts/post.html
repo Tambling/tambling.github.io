@@ -5,6 +5,8 @@ layout: main
 <article>
 <h2>{{ page.title }}</h2>
 <h3>{{ page.date | date: "%A, %B %d, %Y" }}</h3>
-<h3>{{ page.coordinates }}</h3>
+    {% if post.location.nil? %}
+    <h3>{{post.location}}</h3>
+    {% endif %}
 {{content}}
 </article>
