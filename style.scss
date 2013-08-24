@@ -2,6 +2,7 @@ $dark: #bdc3c7;
 $light: #ecf0f1;
 $accent: #2980b9;
 $text: #000;
+
 body{
   font-family: "PT Sans Narrow", sans-serif;
   background-color: $dark;
@@ -22,24 +23,30 @@ a{
   background-color: #ecf0f1;
   opacity: 0.6;
   border: 0px solid $accent;
+
   &:hover{
     opacity: 1;
   }
+
   &.opaque{
     opacity: 1;
   }
-&.bordered{
-  border-left: 3px solid $accent;
-  border-bottom: 3px solid $accent;
-  border-top: 3px solid $accent;
-}
-&.flush-right{
-  right: 0px;
-}
+
+  &.bordered{
+    border-left: 3px solid $accent;
+    border-bottom: 3px solid $accent;
+    border-top: 3px solid $accent;
+  }
+
+  &.flush-right{
+    right: 0px;
+  }
+
   nav{
     float: left;
   }
 }
+
 #links{
   margin: 0 8px;
   clear: both;
@@ -47,17 +54,23 @@ a{
   line-height: 50px;
   vertical-align: middle;
   list-style: none;
+
   li{
     padding: 0 5px;
     width: 30px;
     text-align: center;
     line-height: 40px;
     vertical-align: middle;
+
     i{
       height: 40px;
       line-height: 40px;
       vertical-align: middle;
+      .icon{
+        font-size: 30px;
+      }
     }
+
     a{
       color: $dark;
       height: 40px;
@@ -69,45 +82,14 @@ a{
         color: $accent;
       }
     }
+
   }
 }
-.hoverable:hover{
-  opacity: 1.0
-}
 
-header{
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: white;
-  font-size: 2.7em;
-  margin: 0 auto;
-  margin-top: 10px;
-  min-width: 300px;
-    width: 60%;
-  max-width: 700px;
-  text-align: center;
-  height: 61px;
-  line-height: 61px;
-
-}
-
-#main{
-  z-index: 0;
-  min-width: 300px;
-  width: 60%;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 10px;
-  h1{
-    text-align: center;
-    color: $light;
-  }
-  h2, h3{
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    margin: 6px 0;
-  }
+#about{
+  width: 400px;
+  padding: 0 15px;
+  float: left;
 }
 
 #back{
@@ -133,18 +115,40 @@ header{
     line-height: 50px;
     vertical-align: middle;
   }
-
-
 }
 
-#about{
-  width: 400px;
-  padding: 0 15px;
-  float: left;
-
+.hoverable:hover{
+  opacity: 1.0
 }
-.icon{
-  font-size: 30px;
+
+header{
+  height: 61px;
+  min-width: 300px;
+  width: 60%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 61px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 2.7em;
+  color: white;
+}
+
+#main{
+  z-index: 0;
+  min-width: 300px;
+  width: 60%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  h2, h3{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 6px 0;
+  }
 }
 
 article{
@@ -156,7 +160,6 @@ article{
 
 figure.image{
   padding: 10px;
-  width: 400px;
   margin: 10;
   background-color: $light;
   height: auto;
@@ -168,15 +171,11 @@ figure.image{
     float: right;
     margin-right: 0px;
   }
-  &.center{
-    margin: 10 auto;
-    clear: both;
-  }
   img{
     display: block;
-    clear: both;
   }
   figcaption{
+    width: 100%;
     font-size: 0.8em;
     margin-top: 10px;
     clear: both;
