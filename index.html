@@ -1,14 +1,12 @@
 ---
 layout: main
-title: Dean Tambling | Rails Developer
+title: Tambling Dot Me
 ---
 {% for post in site.posts %}
 <article>
   <h2><a href={{post.url}}>{{post.title}}</a></h2>
   <h3>{{ post.date | date: "%A, %B %d, %Y" }}</h3>
-  {% if post.location.nil? %}
-  <h3>{{post.location}}</h3>
-  {% endif %}
   {{post.content}}
 </article>
+<h2>&mdash;</h2>
 {% endfor %}

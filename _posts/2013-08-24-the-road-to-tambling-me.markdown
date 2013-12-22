@@ -1,7 +1,8 @@
 ---
 title: "The Road to Tambling.me"
 layout: post
-comments: false
+category: blog
+comments: true
 ---
 This site has been a long time coming.
 
