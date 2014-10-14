@@ -1,12 +1,27 @@
----
-layout: main
-title: Tambling Dot Me
----
-{% for post in site.posts %}
-<article>
-  <h2><a href={{post.url}}>{{post.title}}</a></h2>
-  <h3>{{ post.date | date: "%A, %B %d, %Y" }}</h3>
-  {{post.content}}
-</article>
-<h2>&mdash;</h2>
-{% endfor %}
+<html>
+  <head>
+    <title>
+      Tambling Dot Me
+    </title>
+    <style>
+      div {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      wip
+    </div>
+  </body>
+</html>
