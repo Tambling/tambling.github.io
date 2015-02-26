@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimize for Volume
+title: "Optimize for Volume"
 date: 2015-02-25
 category: dispatches
 ---
