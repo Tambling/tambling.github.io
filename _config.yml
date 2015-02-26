@@ -1,7 +1,7 @@
 # Site settings
 title: tambling dot me
 email: dean@tambling.me
-description: > The online home of Dean Tambling, full-stack web engineer.
+description: "The online home of Dean Tambling, full-stack web engineer."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tambling.me" # the base hostname & protocol for your site
 twitter_username: DeanTambling
