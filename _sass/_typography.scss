@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+
+@mixin inconsolata {
+  font-family: "Inconsolata", monospace;
+}
+
+
+@mixin serif {
+  font-family: "PT Serif", Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, li {
+  @include inconsolata;
+  color: #333;
+}
+
+p {
+  @include serif;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+
+  &:visited, &:active {
+    color: #AAA;
+  }
+
+  &:hover {
+    color: #888
+  }
+  &:active {
+
+  }
+
+}
+
+
+.nav__spacer {
+  margin: 0 5px;
+}
+

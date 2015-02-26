@@ -1,0 +1,7 @@
+<nav class="header__nav">
+  <a href="/" class="header__home-link">dean tambling</a>
+  {% if page.category %}
+    <span class="nav__spacer">:</span>
+    <a href="/{{page.category}}" class="header__home-link">{{page.category}}</a>
+  {% endif %}
+</nav>

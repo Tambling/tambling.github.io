@@ -1,0 +1,16 @@
+{% if post %}
+  {% assign target = post %}
+  {% assign content = post.content %}
+{% elsif page %}
+  {% assign target = page %}
+{% endif %}
+
+<div class="post__meta-content">
+  {{ target.date | date: "%B %-d, %Y" }}
+  {% if target.coords %}
+  <span class="spacer">•</span>
+  {{ target.coords }}
+  {% endif %}
+  <span class="spacer">•</span>
+  {{ content | number_of_words }} words
+</div>

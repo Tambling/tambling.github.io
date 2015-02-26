@@ -1,0 +1,13 @@
+---
+title: dispatches – tambling dot me
+layout: default
+paginate:
+  category: process
+---
+<a href="/">home</a>
+<h1>process</h1>
+{% for post in paginator.posts %}
+ <a href="{{post.url}}">{{ post.title }}</a>
+ {{post.date}}
+ {{post.excerpt}}
+{% endfor %}
