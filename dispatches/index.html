@@ -3,10 +3,6 @@ title: dispatches – tambling dot me
 layout: default
 paginate:
   category: dispatches
+header: dispatches
 ---
-<h1>dispatches</h1>
-<section class="post-index">
-{% for post in paginator.posts %}
-  {% include post.html %}
-{% endfor %}
-</section>
+{% include posts.html %}
