@@ -54,7 +54,7 @@
   font-weight: normal;
 }
 
-div.footnotes {
+div.footnotes:before {
   content: "–";
   text-align: center;
   display: block;
