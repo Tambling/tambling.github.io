@@ -15,7 +15,7 @@ I haven’t been doing this very long, at least not compared to my colleagues, m
 
 I have designed this site[^1] with optimization for volume in mind. Whereas my previous sites were either business cards or portfolios or blogs, I have very deliberately made this one a hybrid of all three.
 
-Putting together a personal site, I’ve found, is actually incredibly difficult, and it’s party an issue of map/territory: I haven’t created very much, so any site I put together is a promissory note for work I’ll create in the future. Since I don’t want to have to remake the site once I produce the work, the act of making the site is also the act of predicting exactly what I’ll be doing and how I want that represented.
+Putting together a personal site, I’ve found, is actually incredibly difficult, and it’s partly an issue of map/territory: I haven’t created very much, so any site I put together is a promissory note for work I’ll create in the future. Since I don’t want to have to remake the site once I produce the work, the act of making the site is also the act of predicting exactly what I’ll be doing and how I want that represented.
 
 This attempt, then, is centered around twelve projects, each of which exists today[^2]. I will be tackling each of these projects in turn, taking them from wherever they are now to some arbitrary (but good-faith) degree of finished-ness. For each project, I’ll share updates on its creation, both from a high-level, product-management perspective, and from a more technical perspective, as I encounter interesting problems[^3].
 

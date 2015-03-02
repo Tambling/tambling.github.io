@@ -12,11 +12,14 @@ html, body {
   @include display(flex);
   @include align-items(center);
 
+  padding: 0px 20px;
   padding-bottom: 60px;
   height: 100%;
   .home-column {
     @include inconsolata;
     @include span-columns(3);
+    display: block;
+    clear: both;
     ul {
       list-style-type: none;
       padding-left: 10px;
